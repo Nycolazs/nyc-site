@@ -5,7 +5,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Expo + Next.js 👋</Text>
+      <Text style={styles.text}>Nycolazs</Text>
+      <Text>Site em manutenção</Text>
     </View>
   );
 }
@@ -17,6 +18,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontSize: 16,
+    fontSize: 30,
+    fontWeight:'bold',
   },
 });
