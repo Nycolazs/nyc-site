@@ -106,26 +106,47 @@
     </style>
     <b style="font-size:30px">English</b>
     <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" id="myCheck" onclick="myFunction()">
         <span class="slider round"></span>
     </label>
     <b style="font-size:30px">Portuguese BR</b>
 </div>
+<script>
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck");
+      if (checkBox.checked == true){
+        document.getElementById("title").innerHTML= "Olá, eu sou Nycolazs";
+          document.getElementById("quem_sou").innerHTML= "Quem sou";
+          document.getElementById("texto").innerHTML= "Eu sou Nycolas, tenho 17 anos, sou formado em tecnico de informatico pela EEEP César Campelo. Gosto de programação voltado ao backed e tenho interesse e habilidades principalmente com a linguagem Java. Gosto de jogar videogame, ler e sair com os amigos. Tenho interesse em matérias como historia e fisica.";
+          document.getElementById("informacoes").innerHTML="Informações Pessoais";
+          document.getElementById("nome").innerHTML="Nome: Pedro Nycolas Rocha";
+          document.getElementById("idade").innerHTML="Idade: 17 anos";
+          document.getElementById("local").innerHTML="Fortaleza - Ceará - Brasil";
+      } else {
+         document.getElementById("title").innerHTML= "Hi, I'm Nycolazs";
+         document.getElementById("quem_sou").innerHTML= "Who I'm";
+         document.getElementById("texto").innerHTML= "I'm Nycolas, I'm 17 years old, I graduated in IT technician from EEEP César Campelo. I like backed-oriented programming and I have interest and skills mainly with the Java language. I like to play video games, read and go out with friends. I'm interested in subjects like history and physics.";
+         document.getElementById("informacoes").innerHTML="Personal Informations";
+         document.getElementById("nome").innerHTML="Name: Pedro Nycolas Rocha";
+         document.getElementById("idade").innerHTML="Age: 17 years old";
+         document.getElementById("local").innerHTML="Fortaleza - Ceará - Brazil";
+      }
+    }
+</script>
     <div class="language" style="flex-direction:column"></div>
     <div class="container">
-        <h1 class="my-4">Hi, I'm Nycolazs<br></h1>
+        <h1 id="title" class="my-4">Hi, I'm Nycolazs<br></h1>
         <div class="row">
             <div class="col-md-8"><img class="img-fluid" src="http://placehold.it/750x500" alt="Alt Text"></div>
             <div class="col-md-4">
-                <h3 class="my-3">Who I'm</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis
-                    enim.</p>
-                <h3 class="my-3">Project Details</h3>
+                <h3 id="quem_sou" class="my-3">Who I'm</h3>
+                <p id="texto">I'm Nycolas, I'm 17 years old, I graduated in IT technician from EEEP César Campelo. I like backed-oriented programming and I have interest and skills mainly with the Java language. I like to play video games, read and go out with friends.
+                    I'm interested in subjects like history and physics.</p>
+                <h3 id="informacoes" class="my-3">Personal Informations</h3>
                 <ul class="list-unstyled">
-                    <li>Lorem Ipsum</li>
-                    <li>Consectetur</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Adipiscing Elit</li>
+                    <li id="nome">Name: Pedro Nycolas Rocha</li>
+                    <li id="idade">Age: 17 years old</li>
+                    <li id="local">Fortaleza - Ceará - Brazil</li>
                 </ul>
             </div>
         </div>
@@ -145,7 +166,7 @@
                         <li class="list-inline-item"><a href="#"><a href="https://web.facebook.com/NycSpock/?_rdc=1&_rdr" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></a></li>
                         <li class="list-inline-item"><a href="#"><a href="https://twitter.com/nycoIazs" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></a></li>
                         <li class="list-inline-item"><a href="#"><a href="https://instagram.com/nycolazs/" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></a></li>
-                        <li class="list-inline-item"><a href="#"></a></li>
+                        <li class="list-inline-item"><a href="#"><a href="https://www.linkedin.com/in/pedro-nycolas-rocha-5539b81b8/" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></a></li>
                     </ul><p class="copyright text-muted text-center">Copyright &copy; Nycolazs 2021</p></div>
             </div>
         </div>
