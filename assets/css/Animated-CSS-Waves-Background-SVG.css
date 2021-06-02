@@ -72,3 +72,7 @@
   animation: move_wave 15s linear infinite;
 }
 
+.language {
+  flex-direction: row;
+}
+
